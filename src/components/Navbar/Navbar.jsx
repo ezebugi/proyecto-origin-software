@@ -11,13 +11,19 @@ export const Navbar = () => {
       <img
         // src="logo192.png"
         // src={imgLogo}
-        src="https://res.cloudinary.com/dnqfh2chg/image/upload/v1680216085/imagesZapa_f496gw.jpg"
+        src="https://res.cloudinary.com/dfbl1tifi/image/upload/v1681849319/6353785_t2bz3d.png"
         alt="Este es el logo de la empresa"
       />
+      <h2>Acciones Origin</h2>
       <ul style={{ display: "flex", gap: "30px" }}>
-        <li>Todas</li>
-        <li>Urbanas</li>
-        <li>Deportivas</li>
+        <li>Acciones</li>
+        <li>Cedears</li>
+        <li>Bonos</li>
+        <li>Fondos</li>
+        <li>Cauciones</li>
+        <li>Cheques</li>
+        <li>Monedas</li>
+        <li>Obligaciones negociables</li>
       </ul>
       <CartWidget />
     </div>

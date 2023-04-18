@@ -1,12 +1,12 @@
-import { BsFillCartCheckFill } from "react-icons/bs"
+import { FaMoneyCheckAlt } from "react-icons/fa";
 
 const CartWidget = () => {
   return (
     <div>
-        <BsFillCartCheckFill size={30} />
-        <span>0</span>
+      <FaMoneyCheckAlt size={30} />
+      <span>0</span>
     </div>
-  )
-}
+  );
+};
 
-export default CartWidget
+export default CartWidget;
