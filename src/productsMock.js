@@ -1,39 +1,46 @@
-// export const products = [
-//   {
-//     id: 1,
-//     title: "Nike 360",
-//     price: 15000,
-//     stock: 2,
-//     description: "Estas son las mejores zapatillas",
-//     category: "deportivas",
-//     img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png",
-//   },
-//   {
-//     id: 2,
-//     title: "wilson advance",
-//     price: 14500,
-//     stock: 5,
-//     description: "Ultra livianas y cuentan con camara de aire",
-//     category: "deportivas",
-//     img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669430010/foc364fsakkzmausrovn.jpg",
-//   },
-//   {
-//     id: 3,
-//     title: "Puma",
-//     price: 19000,
-//     stock: 5,
-//     description:
-//       "Las clasicas zapatillas que van para cualquier momento del dia",
-//     category: "urbanas",
-//     img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669430165/images_lujpmr.jpg",
-//   },
-//   {
-//     id: 4,
-//     title: "Jaguar",
-//     price: 17800,
-//     stock: 5,
-//     description: "Zapatillas de ultima generacion para el deporte",
-//     category: "urbanas",
-//     img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669430220/rtokwmt3j03bblbfhwhb.jpg",
-//   },
-// ];
+export const products = [
+  {
+    id: 1,
+    name: "AAPL",
+    price: 132.54,
+    symbol: "AAPL",
+    currency: "USD",
+    description:
+      "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide.",
+    category: "Tech",
+    img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669461447/apple-logo-vector-cupertino-company-ai-jpg_337236_rcn7ml.jpg",
+  },
+  {
+    id: 2,
+    name: "AMZN",
+    price: 3346.83,
+    symbol: "AMZN",
+    currency: "USD",
+    description:
+      "Amazon.com, Inc. engages in the retail sale of consumer products and subscriptions in North America and internationally.",
+    category: "Tech",
+    img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669461479/amazon-logo-png-transparent-aws-logo-png-amazon-logo-white-4k-free-png-download_i9wsce.png",
+  },
+  {
+    id: 3,
+    name: "GOOGL",
+    price: 2292.76,
+    symbol: "GOOGL",
+    currency: "USD",
+    description:
+      "Alphabet Inc. provides online advertising services in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America.",
+    category: "Tech",
+    img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669461517/alphabet-google-png-logo-_3_hsbk3q.png",
+  },
+  {
+    id: 4,
+    name: "TSLA",
+    price: 701.98,
+    symbol: "TSLA",
+    currency: "USD",
+    description:
+      "Tesla, Inc. designs, develops, manufactures, and sells electric vehicles, and energy generation and storage systems in the United States, China, Netherlands, Norway, and internationally.",
+    category: "Auto",
+    img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669461582/tesla-vector-logo-free-download_tczmns.jpg",
+  },
+];
