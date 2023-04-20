@@ -6,9 +6,9 @@ export const products = [
     symbol: "AAPL",
     currency: "USD",
     description:
-      "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide.",
-    category: "Tech",
-    img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669461447/apple-logo-vector-cupertino-company-ai-jpg_337236_rcn7ml.jpg",
+      "Apple Inc. diseña, fabrica y comercializa teléfonos inteligentes, computadoras personales, tabletas, dispositivos portátiles y accesorios en todo el mundo.",
+    category: "acciones",
+    img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1681939649/glsphqznluxremekcrwu.png",
   },
   {
     id: 2,
@@ -17,9 +17,9 @@ export const products = [
     symbol: "AMZN",
     currency: "USD",
     description:
-      "Amazon.com, Inc. engages in the retail sale of consumer products and subscriptions in North America and internationally.",
-    category: "Tech",
-    img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669461479/amazon-logo-png-transparent-aws-logo-png-amazon-logo-white-4k-free-png-download_i9wsce.png",
+      "Amazon.com, Inc. se dedica a la venta minorista de productos de consumo y suscripciones en América del Norte e internacionalmente.",
+    category: "Cedears",
+    img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1681939769/ptsgx2ulxw1whkkfgtzn.png",
   },
   {
     id: 3,
@@ -28,9 +28,9 @@ export const products = [
     symbol: "GOOGL",
     currency: "USD",
     description:
-      "Alphabet Inc. provides online advertising services in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America.",
-    category: "Tech",
-    img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669461517/alphabet-google-png-logo-_3_hsbk3q.png",
+      "Alphabet Inc. ofrece servicios de publicidad en línea en los Estados Unidos, Europa, Medio Oriente, África, Asia-Pacífico, Canadá y América Latina.",
+    category: "Bonos",
+    img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1681939873/jogdovzyglmvrjptt5lb.png",
   },
   {
     id: 4,
@@ -39,8 +39,52 @@ export const products = [
     symbol: "TSLA",
     currency: "USD",
     description:
-      "Tesla, Inc. designs, develops, manufactures, and sells electric vehicles, and energy generation and storage systems in the United States, China, Netherlands, Norway, and internationally.",
-    category: "Auto",
-    img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669461582/tesla-vector-logo-free-download_tczmns.jpg",
+      "Tesla, Inc. diseña, desarrolla, fabrica y vende vehículos eléctricos y sistemas de generación y almacenamiento de energía en Estados Unidos, China, Países Bajos, Noruega e internacionalmente.",
+    category: "Fondos",
+    img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1681939988/llxcohdhtvquddvu9exp.png",
+  },
+  {
+    id: 5,
+    name: "MSFT",
+    price: 261.41,
+    symbol: "MSFT",
+    currency: "USD",
+    description:
+      "Microsoft Corporation desarrolla, licencia y ofrece soporte para software, servicios, dispositivos y soluciones en todo el mundo.",
+    category: "Cauciones",
+    img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1681940002/s2j3nm6sonr0ypv0hpi9.png",
+  },
+  {
+    id: 6,
+    name: "F",
+    price: 13.78,
+    symbol: "F",
+    currency: "USD",
+    description:
+      "Ford Motor Company diseña, fabrica, comercializa y presta servicios a una variedad de vehículos Ford, camiones, vehículos utilitarios deportivos, vehículos electrificados y vehículos de lujo Lincoln en todo el mundo.",
+    category: "Cheques",
+    img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1681940017/l0uqqiiusinjhqm5dcjs.jpg",
+  },
+  {
+    id: 7,
+    name: "WMT",
+    price: 140.74,
+    symbol: "WMT",
+    currency: "USD",
+    description:
+      "Walmart Inc. se dedica a las operaciones minoristas y mayoristas en varios formatos en todo el mundo.",
+    category: "Monedas",
+    img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1681940031/bjycbbkwxkm9cjaxbmoi.png",
+  },
+  {
+    id: 8,
+    name: "JP Morgan Chase",
+    price: 133.42,
+    symbol: "JPM",
+    currency: "USD",
+    description:
+      "JP Morgan Chase & Co. es una de las principales firmas de servicios financieros globales y una de las instituciones bancarias más grandes de los Estados Unidos.",
+    category: "Obligaciones negociables",
+    img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1681940045/ifkf74lfpje00c4bx6tl.png",
   },
 ];

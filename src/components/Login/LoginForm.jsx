@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function LoginForm() {
+function LoginForm({ onLogin }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -8,7 +8,7 @@ function LoginForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (username === "usuario" && password === "clave") {
-      // Acceder a la página principal
+      onLogin();
     } else {
       setError("Usuario o clave inválida");
     }

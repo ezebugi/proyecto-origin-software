@@ -1,17 +1,11 @@
-// import "./Navbar.css"
-
 import CartWidget from "../CartWidget/CartWidget";
 import styles from "./Navbar.module.css";
 
-// import imgLogo from "../../assets/images/imagesZapa.jpg";
-
-export const Navbar = ({ children }) => {
+export const Navbar = ({ children, onLogout }) => {
   return (
     <div>
       <div className={styles.containerNavbar}>
         <img
-          // src="logo192.png"
-          // src={imgLogo}
           src="https://res.cloudinary.com/dfbl1tifi/image/upload/v1681849319/6353785_t2bz3d.png"
           alt="Este es el logo de la empresa"
         />
@@ -26,6 +20,7 @@ export const Navbar = ({ children }) => {
           <li>Monedas</li>
           <li>Obligaciones negociables</li>
         </ul>
+        <button onClick={onLogout}>Cerrar sesión</button>
         <CartWidget />
       </div>
       {children}
