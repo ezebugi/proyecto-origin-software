@@ -36,10 +36,10 @@ function SearchForm() {
     }
   };
 
-  const handleAddAction = async (symbol, name, currency) => {
+  const handleAddAction = async (action) => {
     try {
-      await axios.post("/favorite-actions", { symbol, name, currency });
-      setFavoriteActions([...favoriteActions, { symbol, name, currency }]);
+      await axios.post("/favorite-actions", action);
+      setFavoriteActions([...favoriteActions, action]);
       setSearchResults([]);
     } catch (error) {
       console.error(error);
@@ -64,49 +64,31 @@ function SearchForm() {
         Búsqueda:
         <input type="text" value={searchText} onChange={handleSearchChange} />
       </label>
-      <ul>
-        {searchResults.map((result) => (
-          <li key={result.symbol}>
-            {result.symbol} - {result.name} ({result.currency})
-            <button
-              type="button"
-              onClick={() =>
-                handleAddAction(result.symbol, result.name, result.currency)
-              }
-            >
-              Agregar símbolo
-            </button>
-          </li>
-        ))}
-      </ul>
-      <h2>Mis acciones favoritas</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Símbolo</th>
-            <th>Nombre</th>
-            <th>Moneda</th>
-            <th>Eliminar</th>
-          </tr>
-        </thead>
-        <tbody>
-          {favoriteActions.map((action) => (
-            <tr key={action.symbol}>
-              <td>{action.symbol}</td>
-              <td>{action.name}</td>
-              <td>{action.currency}</td>
-              <td>
-                <button
-                  type="button"
-                  onClick={() => handleRemoveAction(action.symbol)}
-                >
-                  Eliminar
-                </button>
-              </td>
-            </tr>
+      {searchResults.length > 0 && (
+        <ul>
+          {searchResults.map((result) => (
+            <li key={result.symbol}>
+              {result.name} ({result.symbol}) - {result.currency}
+              <button onClick={() => handleAddAction(result)}>Agregar</button>
+            </li>
           ))}
-        </tbody>
-      </table>
+        </ul>
+      )}
+      <h2>Acciones favoritas</h2>
+      {favoriteActions.length === 0 ? (
+        <p>No hay acciones favoritas.</p>
+      ) : (
+        <ul>
+          {favoriteActions.map((action) => (
+            <li key={action.symbol}>
+              {action.name} ({action.symbol}) - {action.currency}
+              <button onClick={() => handleRemoveAction(action.symbol)}>
+                Eliminar
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }

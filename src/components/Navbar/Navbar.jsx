@@ -1,29 +1,92 @@
+// import { Button } from "@mui/material";
 import CartWidget from "../CartWidget/CartWidget";
 import styles from "./Navbar.module.css";
+import { Outlet, Link, NavLink } from "react-router-dom";
 
-export const Navbar = ({ children, onLogout }) => {
+export const Navbar = () => {
   return (
     <div>
       <div className={styles.containerNavbar}>
-        <img
-          src="https://res.cloudinary.com/dfbl1tifi/image/upload/v1681849319/6353785_t2bz3d.png"
-          alt="Este es el logo de la empresa"
-        />
-        <h2>Acciones Origin</h2>
+        <Link to="/">Origin software</Link>
         <ul style={{ display: "flex", gap: "30px" }}>
-          <li>Acciones</li>
-          <li>Cedears</li>
-          <li>Bonos</li>
-          <li>Fondos</li>
-          <li>Cauciones</li>
-          <li>Cheques</li>
-          <li>Monedas</li>
-          <li>Obligaciones negociables</li>
+          <NavLink
+            to="/category"
+            className={({ isActive }) =>
+              isActive ? styles.active : styles.noActive
+            }
+          >
+            Cotizaciones
+          </NavLink>
+          <NavLink
+            to="/category/acciones"
+            className={({ isActive }) =>
+              isActive ? styles.active : styles.noActive
+            }
+          >
+            Acciones
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? styles.active : styles.noActive
+            }
+            to="/category/Cedears"
+          >
+            Cedears
+          </NavLink>
+
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? styles.active : styles.noActive
+            }
+            to="/category/Bonos"
+          >
+            Bonos
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? styles.active : styles.noActive
+            }
+            to="/category/Fondos"
+          >
+            Fondos
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? styles.active : styles.noActive
+            }
+            to="/category/Cauciones"
+          >
+            Cauciones
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? styles.active : styles.noActive
+            }
+            to="/category/Cheques"
+          >
+            Cheques
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? styles.active : styles.noActive
+            }
+            to="/category/Monedas"
+          >
+            Monedas
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? styles.active : styles.noActive
+            }
+            to="/category/Obligaciones negociables"
+          >
+            Obligaciones negociables
+          </NavLink>
         </ul>
-        <button onClick={onLogout}>Cerrar sesión</button>
         <CartWidget />
       </div>
-      {children}
+
+      <Outlet />
     </div>
   );
 };
