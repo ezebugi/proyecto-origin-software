@@ -5,3 +5,11 @@
   justify-content: space-between;
   background-color: rgb(245, 155, 245);
 }
+
+.active {
+  color: rgb(5, 5, 5);
+}
+
+.noActive {
+  color: rgb(100, 100, 92);
+}

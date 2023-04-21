@@ -10,7 +10,7 @@ export const Navbar = () => {
         <Link to="/">Origin software</Link>
         <ul style={{ display: "flex", gap: "30px" }}>
           <NavLink
-            to="/category"
+            to="/"
             className={({ isActive }) =>
               isActive ? styles.active : styles.noActive
             }

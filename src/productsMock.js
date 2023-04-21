@@ -3,6 +3,7 @@ export const products = [
     id: 1,
     name: "AAPL",
     price: 132.54,
+    stock: 2,
     symbol: "AAPL",
     currency: "USD",
     description:
@@ -14,6 +15,7 @@ export const products = [
     id: 2,
     name: "AMZN",
     price: 3346.83,
+    stock: 5,
     symbol: "AMZN",
     currency: "USD",
     description:
@@ -25,6 +27,7 @@ export const products = [
     id: 3,
     name: "GOOGL",
     price: 2292.76,
+    stock: 7,
     symbol: "GOOGL",
     currency: "USD",
     description:
@@ -36,6 +39,7 @@ export const products = [
     id: 4,
     name: "TSLA",
     price: 701.98,
+    stock: 3,
     symbol: "TSLA",
     currency: "USD",
     description:
@@ -47,6 +51,7 @@ export const products = [
     id: 5,
     name: "MSFT",
     price: 261.41,
+    stock: 7,
     symbol: "MSFT",
     currency: "USD",
     description:
@@ -58,6 +63,7 @@ export const products = [
     id: 6,
     name: "F",
     price: 13.78,
+    stock: 1,
     symbol: "F",
     currency: "USD",
     description:
@@ -69,6 +75,7 @@ export const products = [
     id: 7,
     name: "WMT",
     price: 140.74,
+    stock: 12,
     symbol: "WMT",
     currency: "USD",
     description:
@@ -80,6 +87,7 @@ export const products = [
     id: 8,
     name: "JP Morgan Chase",
     price: 133.42,
+    stock: 22,
     symbol: "JPM",
     currency: "USD",
     description:
