@@ -1,6 +1,5 @@
 import ItemCard from "./ItemCard";
 
-
 const ItemList = ({ items }) => {
   return (
     <div
@@ -9,13 +8,12 @@ const ItemList = ({ items }) => {
         justifyContent: "space-evenly",
         flexWrap: "wrap",
         minHeight: "90vh",
-        padding: "40px"
+        padding: "40px",
+        gap: "20px",
       }}
     >
       {items.map((item) => {
-        return (
-          <ItemCard item={item} key={item.id}/>
-        );
+        return <ItemCard item={item} key={item.id} />;
       })}
     </div>
   );
