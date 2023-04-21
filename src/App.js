@@ -40,12 +40,13 @@ function App() {
               <Route path="/mapa" element={<MapChart />} />
               <Route path="*" element={<h1>La ruta no existe</h1>} />
             </Routes>
-            <SearchForm />
-            <MisAccionesPage />
-            <MapChart />
           </Navbar>
+          <SearchForm />
+          <MisAccionesPage />
+          <MapChart />
           <Container />
           <Chart />
+          <ItemListContainer />
           <StockChart />
         </BrowserRouter>
       ) : (
