@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./mis-acciones.css";
 
 const MisAccionesPage = () => {
   const [acciones, setAcciones] = useState([]);

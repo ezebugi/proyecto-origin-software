@@ -3,7 +3,7 @@ import CartWidget from "../CartWidget/CartWidget";
 import styles from "./Navbar.module.css";
 import { Outlet, Link, NavLink } from "react-router-dom";
 
-export const Navbar = () => {
+export const Navbar = ({ children, onLogout }) => {
   return (
     <div>
       <div className={styles.categories}>
@@ -84,6 +84,7 @@ export const Navbar = () => {
               Obligaciones negociables
             </NavLink>
           </ul>
+          <button onClick={onLogout}>Cerrar sesión</button>
           <CartWidget />
         </div>
       </div>

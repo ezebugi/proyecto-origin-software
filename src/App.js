@@ -6,6 +6,10 @@ import ItemListContainer from "./components/ItemList/ItemListContainer";
 import { ItemDetailContainer } from "./components/ItemDetail/ItemDetailContainer";
 import CartContainer from "./components/Cart/CartContainer";
 import Form from "./components/Form/Form";
+import MisAccionesPage from "./components/MisAccionesPage/MisaccionesPage";
+import SearchForm from "./components/MisAccionesPage/SearchForm";
+import Container from "./components/Grafico/Container";
+import ChartOptions from "./components/ChartOptions/ChartOptions";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -23,14 +27,38 @@ function App() {
       {isLoggedIn ? (
         <BrowserRouter>
           <Navbar onLogout={handleLogout}></Navbar>
+
           <Routes>
             <Route>
-              <Route path="/" element={<ItemListContainer />} />
+              <Route
+                path="/"
+                element={
+                  <>
+                    <SearchForm />
+                    <MisAccionesPage />
+                    <ItemListContainer />
+                  </>
+                }
+              />
               <Route
                 path="/category/:categoryName"
-                element={<ItemListContainer />}
+                element={
+                  <>
+                    <ItemListContainer />
+                    <Container />
+                  </>
+                }
               />
-              <Route path="/itemDetail/:id" element={<ItemDetailContainer />} />
+              <Route
+                path="/itemDetail/:id"
+                element={
+                  <>
+                    <ItemDetailContainer />
+                    <ChartOptions />
+                  </>
+                }
+              />
+
               <Route path="/cart" element={<CartContainer />} />
               <Route path="/form" element={<Form />} />
               <Route path="*" element={<h1>La ruta no existe</h1>} />
