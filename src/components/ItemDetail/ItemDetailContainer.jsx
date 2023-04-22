@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 
 export const ItemDetailContainer = () => {
   const [product, setProduct] = useState({});
+  const [cart, setCart] = useState([]);
 
   const { id } = useParams();
 
@@ -15,12 +16,14 @@ export const ItemDetailContainer = () => {
   }, [id]);
 
   const onAdd = (cantidad) => {
-    let data = {
+    const productToAdd = {
       ...product,
       quantity: cantidad,
     };
-    console.log(data);
-    // console.log(`se agregaron al carrito ${cantidad} unidad/es del producto ${product.title}`)
+    setCart([...cart, productToAdd]);
+    console.log(
+      `Se agregaron al carrito ${cantidad} unidad/es del producto ${product.title}`
+    );
   };
 
   return (

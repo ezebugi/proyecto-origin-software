@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import styles from "./SearchForm.module.css";
 
 function SearchForm() {
   const [searchText, setSearchText] = useState("");
@@ -58,18 +59,28 @@ function SearchForm() {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <h1>Buscar acciones</h1>
       <label>
         Búsqueda:
         <input type="text" value={searchText} onChange={handleSearchChange} />
       </label>
       {searchResults.length > 0 && (
-        <ul>
+        <ul className={styles.results}>
           {searchResults.map((result) => (
             <li key={result.symbol}>
-              {result.name} ({result.symbol}) - {result.currency}
-              <button onClick={() => handleAddAction(result)}>Agregar</button>
+              <div className={styles.resultInfo}>
+                <h3 className={styles.resultTitle}>{result.name}</h3>
+                <p className={styles.resultSubtitle}>
+                  ({result.symbol}) - {result.currency}
+                </p>
+              </div>
+              <button
+                className={styles.addButton}
+                onClick={() => handleAddAction(result)}
+              >
+                Agregar
+              </button>
             </li>
           ))}
         </ul>
@@ -78,11 +89,19 @@ function SearchForm() {
       {favoriteActions.length === 0 ? (
         <p>No hay acciones favoritas.</p>
       ) : (
-        <ul>
+        <ul className={styles.favorites}>
           {favoriteActions.map((action) => (
             <li key={action.symbol}>
-              {action.name} ({action.symbol}) - {action.currency}
-              <button onClick={() => handleRemoveAction(action.symbol)}>
+              <div className={styles.favoriteInfo}>
+                <h3 className={styles.favoriteTitle}>{action.name}</h3>
+                <p className={styles.favoriteSubtitle}>
+                  ({action.symbol}) - {action.currency}
+                </p>
+              </div>
+              <button
+                className={styles.removeButton}
+                onClick={() => handleRemoveAction(action.symbol)}
+              >
                 Eliminar
               </button>
             </li>

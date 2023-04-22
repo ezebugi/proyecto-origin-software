@@ -1,6 +1,7 @@
 export const products = [
   {
     id: 1,
+    title: "Apple",
     name: "AAPL",
     price: 132.54,
     stock: 2,
@@ -13,6 +14,7 @@ export const products = [
   },
   {
     id: 2,
+    title: "amazon",
     name: "AMZN",
     price: 3346.83,
     stock: 5,
@@ -25,6 +27,7 @@ export const products = [
   },
   {
     id: 3,
+    title: "google",
     name: "GOOGL",
     price: 2292.76,
     stock: 7,
@@ -37,6 +40,7 @@ export const products = [
   },
   {
     id: 4,
+    title: "tesla",
     name: "TSLA",
     price: 701.98,
     stock: 3,
@@ -49,6 +53,7 @@ export const products = [
   },
   {
     id: 5,
+    title: "microsoft",
     name: "MSFT",
     price: 261.41,
     stock: 7,
@@ -61,6 +66,7 @@ export const products = [
   },
   {
     id: 6,
+    title: "ford",
     name: "F",
     price: 13.78,
     stock: 1,
@@ -73,6 +79,7 @@ export const products = [
   },
   {
     id: 7,
+    title: "walmart",
     name: "WMT",
     price: 140.74,
     stock: 12,
@@ -85,6 +92,7 @@ export const products = [
   },
   {
     id: 8,
+    title: "JP",
     name: "JP Morgan Chase",
     price: 133.42,
     stock: 22,
